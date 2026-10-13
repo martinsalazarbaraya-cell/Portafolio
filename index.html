@@ -7,7 +7,7 @@
   <meta name="description" content="Portafolio de diseño gráfico, contenido para marcas, ilustración y fotografía." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #05070d;
@@ -453,6 +453,96 @@
     .cv-btn small { font: 500 11px var(--sans); letter-spacing: .1em; color: var(--muted); }
     .cv-btn b { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 500; }
     .cv-btn:hover { border-color: var(--blue); background: rgba(74,111,209,.08); }
+
+    /* ===== Editorial ===== */
+    :root {
+      --bg: #f3efe7; --bg-2: #ebe6db; --surface: #e4ded1;
+      --text: #151412; --muted: #6f6a60;
+      --line: rgba(21,20,18,.14); --line-strong: rgba(21,20,18,.55);
+      --blue: #e3352b; --blue-soft: #b8241c;
+      --display: "Archivo", "Arial Narrow", Arial, sans-serif;
+      --sans: "Archivo", Arial, sans-serif;
+      --mono: "Archivo", Arial, sans-serif;
+      --serif: "Instrument Serif", Georgia, serif;
+      --radius: 0px;
+      color-scheme: light;
+    }
+    body { background: var(--bg); color: var(--text); }
+    ::selection { background: var(--blue); color: var(--bg); }
+    .label { font: 600 11px var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--text); }
+    header, header.scrolled { background: rgba(243,239,231,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    .logo { font: 800 15px var(--display); font-stretch: 75%; text-transform: uppercase; letter-spacing: .02em; }
+    .logo i { display: none; }
+    nav a, nav .cta { font: 500 13px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--text); }
+    nav a:hover, nav .cta:hover { color: var(--blue); }
+
+    .hero { padding: 120px 0 0; }
+    .hero .label { display: flex; justify-content: space-between; border-bottom: 1px solid var(--text); padding-bottom: 10px; }
+    .hero h1 { font-family: var(--display); font-weight: 900; font-stretch: 62%; text-transform: uppercase; letter-spacing: -0.01em; line-height: .84; font-size: clamp(72px, 19vw, 300px); max-width: none; margin: clamp(48px, 6vw, 84px) 0 0; }
+    .hero h1 em { font-style: normal; color: var(--blue); }
+    .hero-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; border-top: 1px solid var(--text); margin-top: 28px; padding: 22px 0 0; }
+    .hero-lede { font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.2; color: var(--text); max-width: 26ch; margin: 0; }
+    .hero-bottom { border: 0; padding: 0; justify-content: flex-end; }
+    .text-link { font: 600 13px var(--sans); text-transform: uppercase; letter-spacing: .1em; color: var(--text); border-bottom: 2px solid var(--blue); }
+    .text-link:hover { color: var(--blue); }
+
+    section { padding: 88px 0; }
+    #trabajo { padding-top: 72px; }
+    .section-head { border-bottom: 1px solid var(--text); padding-bottom: 14px; margin-bottom: 36px; align-items: flex-end; }
+    h2 { font-family: var(--display); font-weight: 900; font-stretch: 62%; text-transform: uppercase; letter-spacing: 0; line-height: .9; font-size: clamp(48px, 7vw, 104px); margin: 8px 0 0; }
+    .filters button { font: 500 12px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); border: 0; border-radius: 0; padding: 4px 8px; }
+    .filters button.active, .filters button:hover { color: var(--text); background: none; box-shadow: inset 0 -2px 0 var(--blue); }
+
+    .grid-label { font: 600 11px var(--sans); letter-spacing: .16em; color: var(--text); border-top: 1px solid var(--line-strong); padding-top: 12px; margin: 48px 0 0; }
+    .grid-label.first { border-top: 0; padding-top: 0; margin-top: 0; }
+    .thumb { border: 0; border-radius: 0; background: var(--surface); }
+    .thumb .cover-text { place-items: end start; padding: 0 0 22px 24px; background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.45)); font-family: var(--display); font-weight: 900; font-stretch: 62%; text-transform: uppercase; letter-spacing: 0; line-height: .9; color: #f3efe7; text-shadow: none; }
+    .card.feat .thumb .cover-text { font-size: clamp(56px, 8vw, 128px); padding: 0 0 28px 30px; }
+    .card.half .thumb .cover-text { font-size: clamp(40px, 5vw, 76px); }
+    .card-meta { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line-strong); }
+    .card-meta .num { display: inline; font: 600 12px var(--sans); color: var(--blue); }
+    .card h3 { font: 700 15px var(--sans); text-transform: uppercase; letter-spacing: .04em; }
+    .card-meta .tag { font: 400 13px var(--serif); font-style: italic; font-size: 16px; color: var(--muted); }
+
+    .about { background: var(--bg-2); }
+    .portrait { border-radius: 0; filter: grayscale(1) contrast(1.05); }
+    .bio { font-family: var(--serif); font-size: clamp(21px, 2vw, 26px); line-height: 1.35; color: var(--text); }
+    .lists .label { color: var(--blue); }
+    .lists li { font-size: 14px; color: var(--text); border-color: var(--line); }
+
+    .contact { padding: 110px 0 120px; }
+    .contact h2 { font-size: clamp(64px, 12vw, 180px); margin: 14px 0 32px; }
+    .btn { font: 400 clamp(24px, 3.4vw, 44px) var(--serif); font-style: italic; color: var(--text); border-bottom: 2px solid var(--blue); }
+    .btn:hover { color: var(--blue); }
+    .socials a { font: 600 13px var(--sans); text-transform: uppercase; letter-spacing: .1em; color: var(--text); }
+    .cv-btn { border: 1px solid var(--text); border-radius: 0; color: var(--text); font: 700 14px var(--sans); text-transform: uppercase; letter-spacing: .08em; }
+    .cv-btn b { border-radius: 0; background: var(--blue); color: var(--bg); }
+    .cv-btn:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .cv-btn:hover small { color: var(--bg); }
+    footer { font: 500 12px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); border-top: 1px solid var(--text); }
+
+    dialog { background: var(--bg); color: var(--text); }
+    .m-bar { background: rgba(243,239,231,.94); border-bottom: 1px solid var(--text); }
+    .m-bar button { font: 600 12px var(--sans); text-transform: uppercase; letter-spacing: .08em; border-radius: 0; border-color: var(--text); color: var(--text); }
+    .m-bar button:hover { background: var(--text); color: var(--bg); }
+    .m-head h3 { font-family: var(--display); font-weight: 900; font-stretch: 62%; text-transform: uppercase; letter-spacing: 0; line-height: .86; font-size: clamp(56px, 10vw, 150px); }
+    .m-info { border-top: 1px solid var(--text); }
+    .m-info .label { color: var(--blue); }
+    .m-sec h4 { font-family: var(--display); font-weight: 800; font-stretch: 75%; text-transform: uppercase; font-size: 30px; letter-spacing: 0; }
+    .m-sec p { color: var(--muted); }
+    .m-desc, .m-info p { color: var(--text) !important; }
+    .m-cifra, .m-meta p.m-cifra, p.m-cifra { font: 400 24px var(--serif) !important; font-style: italic !important; border-left: 3px solid var(--blue) !important; color: var(--text) !important; }
+    .gallery img, .gallery .ph, .gallery .video { border-radius: 0; }
+    .gallery.contain img { background: var(--surface); }
+    .pill, .pill.primary { border-radius: 0; box-shadow: none; }
+    .pill.primary { background: var(--text); border-color: var(--text); color: var(--bg); }
+    .play { background: rgba(21,20,18,.6); }
+    .player:hover .play { background: var(--blue); }
+    @media (max-width: 900px) {
+      .hero { padding-top: 96px; }
+      .hero-row { grid-template-columns: 1fr; gap: 24px; }
+      .hero-bottom { justify-content: flex-start; }
+    }
   </style>
 </head>
 <body>
@@ -472,13 +562,15 @@
     <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="container">
-        <span class="label">Diseño gráfico · Marketing — Bogotá</span>
-        <h1>Martín Salazar Baraya</h1>
-        <p class="hero-lede">Diseño piezas gráficas y contenido para marcas y organizaciones. Hoy, practicante de comunicaciones en The Rockefeller Foundation.</p>
-        <div class="hero-bottom">
-          <div class="hero-actions">
-            <a class="text-link" href="#trabajo">Ver proyectos ↓</a>
-            <a class="text-link" href="#contacto">Contacto</a>
+        <span class="label"><span>Portafolio — 2026</span><span>Diseño gráfico · Marketing</span><span>Bogotá</span></span>
+        <h1><em>Martín</em><br>Salazar Baraya</h1>
+        <div class="hero-row">
+          <p class="hero-lede">Diseño piezas gráficas y contenido para marcas y organizaciones. Hoy, practicante de comunicaciones en The Rockefeller Foundation.</p>
+          <div class="hero-bottom">
+            <div class="hero-actions">
+              <a class="text-link" href="#trabajo">Ver proyectos ↓</a>
+              <a class="text-link" href="#contacto">Contacto</a>
+            </div>
           </div>
         </div>
       </div>
